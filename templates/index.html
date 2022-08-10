@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Create ERC 721 Token</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Create ERC 721 Token</h1>
+
+    <div class="form">
+      <br><br>
+        <form action="/" method="POST">
+
+
+            Token Name: <input type="text" name="name" required> <br><br>
+            Token Ticker: <input type="text" name="ticker" required> <br><br>
+            Price: <input type="number" name="price" step=".00001" required> <br><br>
+            Date To End Sell: <input type="date" name="time" required><br><br>
+            Poster Link (recommand ipfs link): <input type="text" name="poster" required> <br><br>
+            Network To Use: <select id="network" name="network" required>
+            {% for network in network_list %}
+            <option value="{{network}}"> {{network}}</option>
+            {% endfor %}
+            </select>
+
+
+            <input type="submit" value="Sumbit">
+        </form>
+        <br><br><a href="/"> Homepage </a>
+    </div>
+</div>
+{% endblock %}

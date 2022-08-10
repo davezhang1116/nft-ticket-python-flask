@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mint Ticket</title>
+</head>
+
+<body onload="flashMessage()">
+  <script>
+    function flashMessage() {
+      if ("{{ flash_message }}" == "True") {
+        callFunction({{data}})
+      }
+    }
+  </script>
+</body>
+</html>

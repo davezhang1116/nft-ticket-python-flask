@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>MONEY</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Mint ERC 721 Token</h1>
+
+    <div class="form">
+      <br><br>
+        <form action="/mint/{{contract_address}}" method="POST">
+
+
+            Seat ID: <input type="number" name="seatID" required> <br><br>
+            Mint To Address: <input type="text" name="mintToAddress" required> <br><br>
+            Ticket Type: <input type="text" name="name" required> <br><br>
+
+
+            <input type="submit" value="Sumbit">
+        </form>
+        <br><br><a href="/"> Homepage </a>
+    </div>
+</div>
+{% endblock %}

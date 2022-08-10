@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Create ERC 721 Token</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Type Your Contract Address</h1>
+    <div class="form">
+      <form action="/redirect/{{fn}}" method="POST">
+        Contract Address: <input type="text" name="address" required>
+        <select
+          name="chainId"
+          required
+        >
+          <option value="1">eth-mainnet</option>
+          <option value="3">eth-ropsten</option>
+          <option value="4">eth-rinkeby</option>
+          <option value="11155111">eth-sepolia</option>
+          <option value="56">bnb-mainnet</option>
+          <option value="97">bnb-testnet</option>
+          <option value="137">polygon-mainnet</option>
+          <option value="80001">polygon-testnet</option>
+        </select>
+      <input type="submit" value="Sumbit">
+    </form>
+  </div>
+  </div>
+{% endblock %}
