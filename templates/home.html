@@ -1,9 +1,93 @@
-<html>
-<a href="/deploy"> Deploy Contract </a>
-<br>
-<a href="/redirect/2">Pay To Mint Token</a>
-<br>
-<a href="/redirect/3">List Your Tokens Of A Collection</a>
-<br>
-<a href="/redirect/4">Withdraw Your Sale (Only Owner)</a>
-</html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=VT323&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Mint NFT Ticket</title>
+</head>
+
+<body>
+    <div class="intro_paragraph">
+        <h1>
+            <span>
+                Mint NFT Ticket
+            </span>
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div>
+                <h2>
+                    What is this
+                </h2>
+                <p>
+                    You can create an ERC-721 token that can be used as tickets. They can be checked in like physical
+                    tickets. You can also make money on these tickets by setting up a price.
+                </p>
+            </div>
+        </div>
+
+        <h2>
+            Functions
+        </h2>
+
+
+        <div class="container" style="margin-left: 5%; margin-right: 5%">
+            <div style="float:left;width:50%">
+                <h3 class="title" style="font-size:24px">
+                    <a href="/deploy">Deploy Your contract </a>
+                </h3>
+                <div class="content">
+                    <p>
+                        You can create an ERC-721 token contract by connecting your Metamask wallet.
+                    </p>
+                </div>
+            </div>
+
+            <div style="float:right;width:50%">
+                <h3 class="title" style="font-size:24px">
+                    <a href="/redirect/2">Pay To Mint Token</a>
+                </h3>
+                <div class="content">
+
+                    <p>
+                        Users can mint token here by providing a token contract and the corresponding evm network.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="container" style="width:100%;">
+                <div style="float:left;width:50%">
+                    <h3 class="title" style="font-size:24px">
+                        <a href="/redirect/3">List Your Tokens Of A Collection</a>
+                    </h3>
+
+                    <div class="content">
+                        <p>
+                            Users can check their tokens by providing a token contract and the corresponding evm
+                            network.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="float:right;width:50%">
+                    <h3 class="title" style="font-size:24px">
+                        <a href="/redirect/4">Withdraw Your Sale (Only Owner)</a>
+                    </h3>
+                    <div class="content">
+                        <p>
+                            Owner can withdraw their revenue by providing a token contract and the corresponding evm
+                            network.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
